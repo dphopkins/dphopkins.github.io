@@ -1,11 +1,15 @@
 $(document).ready(function() {
   $(".jumbotron").hide();
+  $('#jumboContent').html(document.getElementById('homeHTML').innerHTML);
   $(".jumbotron").fadeIn("slow");
 
   function setJumbo(str) {
     switch(str) {
+      case "home":
+        $('#jumboContent').html(document.getElementById('homeHTML').innerHTML);
+        break;
       case "education": // change jumbo to education
-        $("#jumboContent").html(document.getElementById("educationHTML").innerHTML);
+        $("#jumboContent").html(document.getElementById('educationHTML').innerHTML);
         break;
       case "skills": // change jumbo to skills
         $("#jumboContent").html(document.getElementById("skillsHTML").innerHTML);
@@ -20,7 +24,7 @@ $(document).ready(function() {
   $(function() { // setActive()
     $(".navbar_section").on("click", function() { // whenever a navbar section is clicked
       var self = $(this);
-      self.siblings().removeClass("active");
+      $('.navbar_section').removeClass('active');
       self.addClass("active"); // make that section active
       var newJumbo = self.attr("id").split("_")[1]; // get the section name
 
