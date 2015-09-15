@@ -14,8 +14,6 @@
 	<!-- My CSS -->
 	<!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
 
-	<!-- href="http://dphopkins.github.io/index" -->
-
 	<!-- JQuery script -->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
@@ -23,14 +21,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 	<!-- My JS -->
-	<!-- <script type="text/javascript" src="index.js"></script> -->
-
-	<script>
-			$(document).ready(function() {
-				$(".jumbotron").hide();
-				$(".jumbotron").fadeIn(1000);
-			});
-	</script>
+	<script type="text/javascript" src="index.js"></script>
 
 	<title>Dan Hopkins</title>
 </head>
@@ -53,14 +44,14 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li title="Education">
-							<a href="education.html">Education</a>
+						<li title="Education" class="navbar_section" id="navbar_education">
+							<a href="#education">Education</a>
 						</li>
-						<li title="Skills">
-							<a href="skills.html">Skills</a>
+						<li title="Skills" class="navbar_section" id="navbar_skills">
+							<a href="#skills">Skills</a>
 						</li>
-						<li title="Projects">
-							<a href="projects.html">Projects <span class="badge">2<span></a>
+						<li title="Projects" class="navbar_section" id="navbar_projects">
+							<a href="#projects">Projects <span class="badge">2<span></a>
 						</li>
 					</ul>
 
@@ -98,7 +89,7 @@
 	<!-- Summary, accomplishments, and interests -->
 
 	<div class="container">
-		<div class="jumbotron">
+		<div class="jumbotron" id="jumboContent">
 			<div class="row">
 				<div class="col-md-6">
 					<figure>
@@ -120,6 +111,142 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- EDUCATION HTML -->
+	<div style='display:none' id='educationHTML'>
+		<h2 align="center"><b>Haverford College</b></h2>
+
+		<figure>
+			<img src="haverford.jpg" width="100%">
+			<figcaption align="center">Courtesy of the Haverford College admissions website</figcaption>
+		</figure>
+
+		<br>
+		<p>I am on track to graduate from Haverford College in May 2016 with a Bachelor of Science in Computer Science.</p>
+
+		<p>Major GPA: 3.517</p>
+
+		<p>Senior Thesis: TBD Fall 2015</p>
+
+		<p align="center">Related coursework:</p>
+
+		<div align="center">
+
+			<ul style="display:inline-block" align="left">
+				<li><h4>Data Structures</h4></li>
+				<li><h4>Discrete Mathematics</h4></li>
+				<li><h4>Linear Algebra</h4></li>
+				<li><h4>Computer Architecture</h4></li>
+				<li><h4>Analysis of Algorithms</h4></li>
+			</ul>
+
+			<ul style="display:inline-block" align="left">
+				<li><h4>Mobile Development</h4></li>
+				<li><h4>Theory of Computation</h4></li>
+				<li><h4>Scientific Computing</h4></li>
+				<li><h4>Programming Languages</h4></li>
+				<li><h4>Statistics</h4></li>
+			</ul>
+
+		</div>
+	</div>
+
+	<!-- SKILLS HTML -->
+	<div style='display:none' id='skillsHTML'>
+		<div class="row">
+			<div class="col-md-6" align="center">
+				<h2><b>Technical Skills</b></h2>
+
+				<ul style="display:inline-block" align="left">
+					<!-- Unclear whether I should use h4 or p -->
+					<li><h4>Python</h4></li>
+					<li><h4>Java</h4></li>
+					<li><h4>CSS</h4></li>
+					<li><h4>Android Development</h4></li>
+					<li><h4>C++</h4></li>
+					<li><h4>R</h4></li>
+					<li><h4>Twitter Bootstrap</h4></li>
+					<li><h4>Git</h4></li>
+				</ul>
+
+				<ul style="display:inline-block" align="left">
+					<!-- Unclear whether I should use h4 or p -->
+					<li><h4>JavaScript</h4></li>
+					<li><h4>HTML</h4></li>
+					<li><h4>MATLAB</h4></li>
+					<li><h4>Ruby</h4></li>
+					<li><h4>SQLite</h4></li>
+					<li><h4>Scheme</h4></li>
+					<li><h4>Flask</h4></li>
+					<li><h4>Django</h4></li>
+				</ul>
+			</div>
+
+			<div class="col-md-6">
+				<figure>
+					<img src="housecat.jpg" width="100%" height="100%" align="left">
+					<figcaption align="center">Housecat show at Temple University</figcaption>
+				</figure>
+			</div>
+
+		</div>
+	</div>
+
+
+
+
+	<!-- PROJECTS HTML -->
+	<div style='display:none' id='projectsHTML'>
+
+		<h2 align="center"><b>GraphBaker</b> (current)</h2>
+		<h5 align="center"><a href="https://github.com/dphopkins/GraphBaker">GitHub</a></h5>
+		<p>GraphBaker is a web application that allows a user to use voice commands to create simple charts and graphs. The voice commands and much of the machine learning aspect of the project is handled by <a href="https://api.ai/">api.ai</a>, while the actual visualization is handled by the D3.js library. GraphBaker was started at PennApps XII (Fall 2015), but I was unable to put in the time needed due to other commitments. I am hoping to finish it up at some point soon, and am actively working on improving it.</p>
+		<h4>Dan Hopkins</h4>
+		<h4>September 2015 - current</h4>
+		<hr>
+
+		<h2 align="center"><b>Organic Spectra project</b> (current)</h2>
+		<h5 align="center"><a href="https://dphopkins.github.io/Spectra/html/front">Website</a></h5>
+		<p>The Organic Spectra project is a web application created to help students at Haverford College learn organic spectroscopy more effectively and efficiently. The Haverford chemistry department plans to use this in introductory chemistry classes as early as Fall 2015.</p>
+		<h4>Liam Feehery | Dan Hopkins | Joshua Schrier | Haverford College</h4>
+		<h4>May 2015 - current</h4>
+		<hr>
+
+		<h2 align="center"><b>BaseballBot</b></h2>
+		<h5 align="center"><a href="https://github.com/dphopkins/BaseballBot">GitHub</a></h5>
+		<p>A bot for Telegram messenger that allows users to get scores from today's MLB games.</p>
+		<p>Message @BaseballBot on <a href="https://telegram.org/">Telegram</a></p>
+		<h4>Dan Hopkins</h4>
+		<h4>August 2015</h4>
+		<hr>
+
+		<h2 align="center"><b>Mapping Progressive Philadelphia</b></h2>
+		<h5 align="center"><a href="https://github.com/dphopkins/MappingProgressivePhiladelphia">GitHub</a> | <a href="https://goo.gl/8hfJc4">Google Play</a></h5>
+		<p>The beta version of our Android application for Philadelphia Activists &amp; Volunteers Exchange (PAVE) is now available through the Google Play store.</p>
+		<p>Developed for CMSC 395: Mobile Development for Social Change, the PAVE app is currently being used privately by the organization.</p>
+		<p>Features Facebook, Firebase, Google Sheets, and Google Maps integration.</p>
+		<h4>Brian Guggenheimer | Evan Hamilton | Dan Hopkins</h4>
+		<h4>January - May 2015</h4>
+		<hr>
+
+		<h2 align="center"><b>U Up</b></h2>
+		<h5 align="center"><a href="https://github.com/dphopkins/U-Up">GitHub</a></h5>
+		<p>U Up helps students get together to make impromptu study groups, get some food, or just hang out!</p>
+		<p>Created by the good folks at Team U^ during the 2015 Tri-Co Hackathon, where U-Up won Honorable Mention.</p>
+		<h4>Dan Hopkins | Philip Lu | Anh Nguyen | Julie Ta | Hector Uriostegui</h4>
+		<h4>January 2015</h4>
+		<hr>
+
+		<h2 align="center"><b>Risk</b></h2>
+		<h5 align="center"><a href="https://github.com/dphopkins/Risk">GitHub</a></h5>
+		<p>Final project for CMSC 106: Introduction to Data Structures</p>
+		<p>This is a port of the eponymous board game created by Hasbro. Some code has been edited for clarity since the completion of the project.</p>
+		<h4>Kenneth Gudel | Dan Hopkins | Harrison Schell</h4>
+		<h4>January - March 2014</h4>
+
+	</div>
+
+
 
 	<p align="center">&copy; 2015 Dan Hopkins | <b><a href="resume.pdf" style="color:black">View resume</a></b></p>
 
