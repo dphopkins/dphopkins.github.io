@@ -191,7 +191,7 @@
 	<!-- PROJECTS HTML -->
 	<div style='display:none' id='projectsHTML'>
 
-		<h2 align="center"><b>Organic Spectra project</b></h2>
+		<h2 align="center"><b>Organic Spectra project</b> (current)</h2>
 		<h5 align="center"><a href="https://dphopkins.github.io/Spectra/html/front">Website (beta)</a></h5>
 		<p>The Organic Spectra project is a web application created to help students at Haverford College learn organic spectroscopy more effectively and efficiently. Users participate in tutorials and answer timed questions about relevant material. Self-scheduled review material is available, as well as tailored material available in spaced intervals to maximize long-term memory retention. The Haverford chemistry department plans to use this in introductory chemistry classes in the near future.</p>
 		<p>You must log in to access the majority of the site. Username: Guest (case-sensitive) and Password: spectra.</p>
