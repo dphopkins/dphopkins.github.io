@@ -169,10 +169,11 @@
 					<li><h4>Python</h4></li>
 					<li><h4>Java</h4></li>
 					<li><h4>HTML</h4></li>
+					<li><h4>HERA</h4></li>
 					<li><h4>Ruby</h4></li>
 					<li><h4>MATLAB</h4></li>
+					<li><h4>NoSQL</h4></li>
 					<li><h4>Linux</h4></li>
-					<li><h4>Django</h4></li>
 				</ul>
 
 				<ul style="display:inline-block" align="left">
@@ -183,6 +184,7 @@
 					<li><h4>C++</h4></li>
 					<li><h4>R</h4></li>
 					<li><h4>Scheme</h4></li>
+					<li><h4>SQLite</h4></li>
 					<li><h4>Git</h4></li>
 				</ul>
 			</div>
